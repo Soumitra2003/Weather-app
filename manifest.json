@@ -1,0 +1,21 @@
+{
+  "name": "Weather App",
+  "short_name": "Weather",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#e4603a",
+  "theme_color": "#da1e4e",
+  "description": "A modern weather app with forecast, geolocation, and more!",
+  "icons": [
+    {
+      "src": "img/sunny.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "img/sunny.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}

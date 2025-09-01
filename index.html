@@ -1,0 +1,78 @@
+    <body>
+        <!-- General animated site elements -->
+        <div class="site-animations">
+            <div class="cloud cloud-1"></div>
+            <div class="cloud cloud-2"></div>
+            <div class="cloud cloud-3"></div>
+            <div class="sun-rays"></div>
+        </div>
+        <div id="map" style="height: 250px; width: 100%; margin: 18px 0; border-radius: 12px; display: none;"></div>
+    <!-- Leaflet.js for map integration -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="shortcut icon" href="img/bg.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="app-main" id="parent">
+        <div class="header">
+            <h4>Weather App <span id="theme-toggle" title="Toggle dark/light mode">🌓</span></h4>
+        </div>
+        <div class="controls">
+            <button id="geo-btn" title="Use my location">📍</button>
+            <input type="text" name="" id="input-box" class="input-box" placeholder="Enter city name">
+            <button id="refresh-btn" title="Refresh">🔄</button>
+            <select id="unit-toggle">
+                <option value="metric">°C</option>
+                <option value="imperial">°F</option>
+            </select>
+        </div>
+        <div id="spinner" class="spinner" style="display:none;"></div>
+        <div class="weather-body" id="weather-body">
+            <!-- weather-body will be appended through JavaScript -->
+        </div>
+        <div id="weather-alerts" class="weather-alerts"></div>
+        <div class="forecast" id="forecast">
+            <!-- 5-day forecast will be appended here -->
+        </div>
+        <div class="hourly-forecast-section">
+            <h5>Hourly Forecast</h5>
+            <canvas id="hourlyChart" width="400" height="180"></canvas>
+        </div>
+    </div>
+   
+
+        <link rel="manifest" href="manifest.json">
+        <script src="script.js"></script>
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                    navigator.serviceWorker.register('service-worker.js');
+                });
+            }
+        </script>
+    <!-- font awesome icon cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- weather icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css" integrity="sha512-+1Qw1Qw1Qw1Qw1Qw1Qw1Qw1Qw1Qw1Qw1Qw1Qw1Qw1Qw1Qw1Qw1Qw1Qw1Qw1Qw1Qw1Qw1Qw1Qw1Qw1Qw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- sweetalert cdn........ -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Chart.js for hourly forecast -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+
+</html>
