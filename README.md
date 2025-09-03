@@ -18,8 +18,8 @@ A modern, feature-rich weather application built with HTML, CSS, and JavaScript.
 - **General Animations:** Floating clouds and sun rays for a lively UI.
 - **PWA:** Installable as a Progressive Web App with offline support.
 
-  ##Netlify link:
-https://weather-app-soum.netlify.app/
+## Netlify link:
+**https://weather-app-soum.netlify.app/**
 
 ## How to Use
 
