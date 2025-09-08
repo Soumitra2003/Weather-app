@@ -1,7 +1,6 @@
 #
 # ## Screenshot
-#
-# ![App Screenshot](ss/demo1.png)
+![Demo Screenshot](ss/Screenshot 2025-09-08 110637.png)
 # [![Netlify Status](https://api.netlify.com/api/v1/badges/68b530a9-f002-a9a4-14bf-6070bweather-app-soum/deploy-status)](https://68b530a9f002a9a414bf6070--weather-app-soum.netlify.app/)
 
 **Live Demo:** [https://68b530a9f002a9a414bf6070--weather-app-soum.netlify.app/](https://68b530a9f002a9a414bf6070--weather-app-soum.netlify.app/)
